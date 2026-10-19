@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx --env-file=.env.local src/server.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "seed:mock-images": "tsx --env-file=.env.local scripts/seed-mock-images.ts",
+    "setup:infra": "floci start && docker compose up -d"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/multer": "^2.3.0",
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1152.0",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.2",
+    "multer": "^2.4.0",
+    "sharp": "^0.35.5"
+  }
+}

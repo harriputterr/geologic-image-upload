@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", /* Or your preferred target */
+    "module": "NodeNext", /* Matches your module resolution */
+    "moduleResolution": "NodeNext",
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "types": [
+      "node",
+      "express"
+    ] /* Explicitly loads Node.js global types */
+  }
+}
